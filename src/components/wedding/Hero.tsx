@@ -61,41 +61,61 @@ export function Hero() {
           <motion.h1
             initial={{ opacity: 0, y: 24, filter: "blur(8px)" }}
             animate={{ opacity: 1, y: 0, filter: "blur(0px)" }}
-            transition={{ delay: 0.4, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
-            className="mt-4 sm:mt-5 flex flex-col items-center leading-[0.82]"
+            transition={{ delay: 0.35, duration: 1.1, ease: [0.22, 1, 0.36, 1] }}
+            className="mt-3 sm:mt-4 flex flex-col items-center leading-[0.9]"
           >
-            <span className="text-gold-foil font-display text-[3.5rem] sm:text-[4.25rem] font-light">
-              {wedding.groom.name}
+            <span className="text-gold-foil font-display text-[2.75rem] sm:text-[3.75rem] font-light tracking-wide">
+              {wedding.groom.fullName}
             </span>
-            <span className="font-script text-gold/80 my-1 text-2xl sm:text-3xl">and</span>
-            <span className="text-gold-foil font-display text-[3.5rem] sm:text-[4.25rem] font-light">
-              {wedding.bride.name}
+            <span className="font-script text-gold/80 my-0.5 text-2xl sm:text-3xl">and</span>
+            <span className="text-gold-foil font-display text-[2.75rem] sm:text-[3.75rem] font-light tracking-wide">
+              {wedding.bride.fullName}
             </span>
           </motion.h1>
 
           <motion.div
             initial={{ opacity: 0, scaleX: 0 }}
             animate={{ opacity: 1, scaleX: 1 }}
-            transition={{ delay: 1, duration: 0.9 }}
-            className="rule-gold mt-5 sm:mt-7 w-32 sm:w-40"
+            transition={{ delay: 0.75, duration: 0.9 }}
+            className="rule-gold mt-4 sm:mt-5 w-32 sm:w-40"
           />
 
           <motion.p
             initial={{ opacity: 0, y: 14 }}
             animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: 1.15, duration: 0.9 }}
-            className="text-ivory/85 mt-4 sm:mt-5 text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.35em] uppercase"
+            transition={{ delay: 0.9, duration: 0.9 }}
+            className="text-ivory/85 mt-3 sm:mt-4 text-xs sm:text-sm tracking-[0.3em] sm:tracking-[0.35em] uppercase"
           >
             25 &amp; 26 · 11 · 2026
           </motion.p>
           <motion.p
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
-            transition={{ delay: 1.35, duration: 0.9 }}
-            className="text-ivory/60 mt-2 text-[0.65rem] sm:text-[0.7rem] tracking-[0.25em] uppercase"
+            transition={{ delay: 1.05, duration: 0.9 }}
+            className="text-ivory/60 mt-1.5 text-[0.65rem] sm:text-[0.7rem] tracking-[0.25em] uppercase"
           >
             Mysore, Karnataka
           </motion.p>
+
+          {/* Lord Lakshmi Venkateshwara Divine Wedding Artwork in the open space */}
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9, y: 14 }}
+            animate={{ opacity: 1, scale: 1, y: 0 }}
+            transition={{ delay: 1.2, duration: 1, ease: [0.22, 1, 0.36, 1] }}
+            className="relative mt-5 sm:mt-6 flex flex-col items-center"
+          >
+            <div className="relative">
+              <div
+                aria-hidden
+                className="absolute inset-0 bg-gold/25 blur-2xl rounded-full scale-125 pointer-events-none"
+              />
+              <img
+                src="/images/lord-lakshmi-venkateshwara.png"
+                alt="Lord Lakshmi Venkateshwara Divine Wedding"
+                className="relative h-28 sm:h-36 w-auto object-contain drop-shadow-[0_4px_24px_rgba(235,190,65,0.55)] filter brightness-110"
+              />
+            </div>
+          </motion.div>
         </motion.div>
       </div>
 

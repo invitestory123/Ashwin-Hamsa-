@@ -1,14 +1,14 @@
 export const wedding = {
   groom: {
     name: "Ashwin",
-    fullName: "Ashwin N. C.",
+    fullName: "Ashwin N C",
     line: "Son of Smt. L. Bhagya and Late Sri B. Chikke Gowda",
     note: "A man of few words, endless kindness, and a humour that makes every moment brighter.",
     image: "/images/couple-window.png",
   },
   bride: {
     name: "Hamsa",
-    fullName: "Hamsa H. V.",
+    fullName: "Hamsa H V",
     line: "Daughter of Smt. Bhanumathi and Sri Vyramudi",
     note: "A sunshine soul who turns little moments into big memories and ordinary days into adventures.",
     image: "/images/couple-temple.png",
